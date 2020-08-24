@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Stopwatch"
+    android:background="#212121">
+
+    <TextView
+        android:id="@+id/swText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0:0.00"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:textSize="70sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp">
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/flagListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/swText"
+        android:layout_above="@+id/start">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start/Stop"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_layout"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="100dp">
+    </Button>
+    <Button
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flag"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_layout"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="20dp">
+    </Button>
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_layout"
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="20dp">
+    </Button>
+
+
+
+
+</RelativeLayout>
